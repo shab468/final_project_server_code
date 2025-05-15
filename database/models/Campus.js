@@ -20,7 +20,13 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+
+  imageUrl: { //added the image Url
+    type: Sequelize.STRING,
+    defaultValue: 'https://via.placeholder.com/150', // You can change the placeholder to any image you prefer
   }
+  
 });
 
 // Export the campus model
